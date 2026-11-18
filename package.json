@@ -2,7 +2,7 @@
   "name": "livox-pcl",
   "displayName": "Livox CustomMsg Converter",
   "description": "Converts livox_ros_driver2/msg/CustomMsg to foxglove.PointCloud so Livox point clouds render in the 3D panel",
-  "publisher": "Leonardo Nels",
+  "publisher": "leonardonels",
   "homepage": "",
   "version": "0.1.0",
   "license": "MIT",
