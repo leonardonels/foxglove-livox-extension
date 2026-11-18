@@ -20,7 +20,10 @@ function toPointCloud(msg: CustomMsg): PointCloud {
   const v = new DataView(data.buffer);
   let n = 0;
   for (const p of msg.points) {
-    if (p.x === 0 && p.y === 0 && p.z === 0) continue;   // no-return: would pile up at the origin
+    // No-return points: they would pile up at the origin.
+    if (p.x === 0 && p.y === 0 && p.z === 0) {
+      continue;
+    }
     const o = n++ * STRIDE;
     v.setFloat32(o, p.x, true);
     v.setFloat32(o + 4, p.y, true);

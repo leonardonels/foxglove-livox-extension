@@ -1,4 +1,4 @@
-# foxglove-livox-extension
+# livox-pcl
 
 A [Foxglove](https://foxglove.dev) extension that shows Livox LiDAR point clouds published as `livox_ros_driver2/msg/CustomMsg` in Foxglove's 3D panel.
 
@@ -76,8 +76,8 @@ The steps below are the whole process, so you can repeat it for any other custom
 **1. Generate the template.**
 
 ```sh
-npm init foxglove-extension@latest foxglove-livox-extension
-cd foxglove-livox-extension
+npm init foxglove-extension@latest livox-pcl
+cd livox-pcl
 ```
 
 The template generates an example custom panel (`src/ExamplePanel.tsx`). This extension doesn't use it, so you can delete it.
@@ -124,7 +124,7 @@ To adapt this for another message type, change `fromSchemaName`, the input types
 npm run package
 ```
 
-This creates `<publisher>.foxglove-livox-extension-<version>.foxe`. Install it by dragging it onto the Foxglove window, or attach it to a GitHub release. `.foxe` files are git-ignored.
+This creates `<publisher>.livox-pcl-<version>.foxe`, for example `leonardonels.livox-pcl-0.1.0.foxe`. Install it by dragging it onto the Foxglove window, or attach it to a GitHub release. `.foxe` files are git-ignored.
 
 For publishing to the Foxglove extension registry or to your organization, see the [Foxglove docs](https://docs.foxglove.dev/docs/visualization/extensions/publish/#packaging-your-extension).
 
